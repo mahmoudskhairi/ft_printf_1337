@@ -1,61 +1,53 @@
-# 42 ft_printf Project
+# ft_printf Project
 
 <!-- HTML for the image (replace with an actual path or URL) -->
 <img src="printf_2.png" alt="Libft Logo" style="max-width: 100%; height: auto;">
 
-## Overview
+## Project Overview
 
-The **`ft_printf`** project is part of the 42 School curriculum and focuses on re-implementing the well-known `printf` function from the C Standard Library. This project is designed to deepen your understanding of variadic functions, string formatting, and output management in C, providing a flexible way to format text and output it to the standard output or other streams.
+<p>
+The **ft_printf** project is a custom implementation of the C standard library function <code>printf</code>. The goal is to deepen the understanding of formatted output functions in C and enhance skills in handling variable arguments and format specifiers.
+</p>
 
----
+## Features
 
-## Key Features
+<ul>
+  <li>Supports a variety of format specifiers: <code>%c, %s, %d, %i, %u, %x, %X, %p, %% </code>.</li>
+  <li>Handles flags for formatting such as <code>-</code>, <code>+</code>, <code>0</code>, and width specifiers.</li>
+  <li>Implements precision for decimal, strings, and hexadecimal outputs.</li>
+</ul>
 
-- Custom implementation of a subset of the C standard `printf` function.
-- Supports formatted output conversion specifiers such as:
-  - **`%c`**: Print a single character.
-  - **`%s`**: Print a string of characters.
-  - **`%p`**: Print a pointer address.
-  - **`%d` or `%i`**: Print a signed decimal integer.
-  - **`%u`**: Print an unsigned decimal integer.
-  - **`%x` or `%X`**: Print a hexadecimal number (lowercase and uppercase).
-  - **`%%`**: Print a literal `%` sign.
-  
-- Handles variable arguments using the `stdarg.h` library.
-- Proper management of buffer and memory to ensure correct output, even with large input.
+## Installation
 
----
+<p>To install and run this project:</p>
 
-## Supported Conversion Specifiers
+<pre>
+  https://github.com/mahmoudskhairi/ft_printf_42.git
+  cd ft_printf
+  make
+</pre>
 
-`ft_printf` mimics the functionality of the standard `printf` but is limited to the following specifiers:
+## Usage
 
-| Specifier | Description                   | Example Input | Example Output |
-|-----------|-------------------------------|---------------|----------------|
-| `%c`      | Character                      | `ft_printf("%c", 'A');` | A |
-| `%s`      | String                         | `ft_printf("%s", "Hello");` | Hello |
-| `%p`      | Pointer                        | `ft_printf("%p", ptr);` | 0x7ffee32f0a |
-| `%d`/`%i` | Signed integer (decimal)       | `ft_printf("%d", 42);` | 42 |
-| `%u`      | Unsigned integer               | `ft_printf("%u", 42);` | 42 |
-| `%x`      | Unsigned hexadecimal (lower)   | `ft_printf("%x", 255);` | ff |
-| `%X`      | Unsigned hexadecimal (upper)   | `ft_printf("%X", 255);` | FF |
-| `%%`      | Percent sign                   | `ft_printf("%%");` | % |
+<p>Here's an example of how to use the <code>ft_printf</code> function:</p>
 
----
+<pre>
+#include "ft_printf.h"
 
-## Project Structure
+int main() {
+    int number = 42;
+    char *str = "Hello, World!";
+    
+    ft_printf("Number: %d\nString: %s\n", number, str);
+    return 0;
+}
+</pre>
 
-Here is the structure of the `ft_printf` repository:
+<h2 id="contact">Contact</h2>
+<p>For any questions, feedback, or issues, feel free to reach out:</p>
+<ul>
+  <li>Email: <a href="mailto:mahmoud.skhairi@gmail.com">mahmoud.skhairi@gmail.com</a></li>
+  <li>LinkedIn: <a href="https://www.linkedin.com/in/mahmoud-skhairi" target="_blank">mahmoud skhairi</a></li>
+</ul>
 
-```bash
-ft_printf/
-├── srcs/              # Source files for the implementation
-│   ├── ft_printf.c    # Main printf logic
-│   ├── ft_putstr.c    # Helper functions (for displaynig any string)
-│   ├── ft_putnbr.c    # Helper functions (for displaynig any number)
-│   ├── ft_putnbr_u.c  # Helper functions (for displaynig the positive numbers)
-│   └── ft_********.c  # Other Helper functions 
-├── includes/          # Header files
-│   └── ft_printf.h    # Prototypes and macro definitions
-├── Makefile           # Script to compile the library
-└── README.md          # This readme file
+<h2>Happy Coding!</h2>

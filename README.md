@@ -1,5 +1,8 @@
 # 42 ft_printf Project
 
+<!-- HTML for the image (replace with an actual path or URL) -->
+<img src="frintf_image.jpeg" alt="Libft Logo" style="max-width: 100%; height: auto;">
+
 ## Overview
 
 The **`ft_printf`** project is part of the 42 School curriculum and focuses on re-implementing the well-known `printf` function from the C Standard Library. This project is designed to deepen your understanding of variadic functions, string formatting, and output management in C, providing a flexible way to format text and output it to the standard output or other streams.

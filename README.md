@@ -54,7 +54,7 @@ ft_printf/
 │   ├── ft_putstr.c    # Helper functions (for displaynig any string)
 │   ├── ft_putnbr.c    # Helper functions (for displaynig any number)
 │   ├── ft_putnbr_u.c  # Helper functions (for displaynig the positive numbers)
-│   └── ft_*******.c   # other Helper functions 
+│   └── ft_********.c  # Other Helper functions 
 ├── includes/          # Header files
 │   └── ft_printf.h    # Prototypes and macro definitions
 ├── Makefile           # Script to compile the library

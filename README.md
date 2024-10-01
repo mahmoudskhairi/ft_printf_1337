@@ -51,11 +51,11 @@ Here is the structure of the `ft_printf` repository:
 ft_printf/
 ├── srcs/              # Source files for the implementation
 │   ├── ft_printf.c    # Main printf logic
-│   ├── ft_utils.c     # Helper functions (itoa, etc.)
-│   ├── ft_parser.c    # Handles parsing of format specifiers
-│   └── ft_writer.c    # Handles writing formatted output
+│   ├── ft_putstr.c    # Helper functions (for displaynig any string)
+│   ├── ft_putnbr.c    # Helper functions (for displaynig any number)
+│   ├── ft_putnbr_u.c  # Helper functions (for displaynig the positive numbers)
+│   └── ft_*******.c   # other Helper functions 
 ├── includes/          # Header files
 │   └── ft_printf.h    # Prototypes and macro definitions
 ├── Makefile           # Script to compile the library
-├── README.md          # This readme file
-└── tests/             # Test files for different printf cases
+└── README.md          # This readme file

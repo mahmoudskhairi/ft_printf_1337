@@ -22,7 +22,7 @@ The **ft_printf** project is a custom implementation of the C standard library f
 <p>To install and run this project:</p>
 
 <pre>
-  https://github.com/mahmoudskhairi/ft_printf_42.git
+  git clone https://github.com/mahmoudskhairi/ft_printf_42.git
   cd ft_printf
   make
 </pre>
